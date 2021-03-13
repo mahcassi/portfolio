@@ -1,7 +1,3 @@
-document.querySelector(".hamburguer").addEventListener("click", () =>
-    document.querySelector(".container").classList.toggle("show-menu")
-); //Menu Responsividade
-
 // animação scroll
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
@@ -23,3 +19,8 @@ if (target.length) {
 window.addEventListener('scroll', function() {
     animeScroll();
 })
+
+//Menu Responsividade
+document.querySelector(".hamburguer").addEventListener("click", () =>
+    document.querySelector(".container").classList.toggle("show-menu")
+); 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Mulish:ital,wght@0,600;0,700;1,500;1,600&display=swap');
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
 * {
     margin: 0;
@@ -25,7 +26,7 @@ body {
 
 /* Nav */
 
-.barra {
+nav {
     width: 100%;
     background-color: #000;
     color: azure;
@@ -38,7 +39,7 @@ body {
     opacity: 0.9;
 }
 
-.menu-barra {
+.menu {
     display: flex;
     align-items: center;
 }
@@ -81,57 +82,8 @@ body {
     color: #c32538;
 }
 
-
-/* Menu - Responsividade */
-
-
-/* .hamburguer{
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column; /* os elementos ficaram um embaixo do outro 
-    justify-content: space-evenly;
-    cursor: pointer;
-    z-index: 200;
-}
-.show-menu .hamburguer{
-    right: 2rem;
-}
-.line{
-    width: 100%;
-    height: .1rem;
-    background-color: #fff;
-    box-shadow: 0.1rem 0.1rem 1px #000;
-    transition: transform 1s;
-}
-.show-menu #line1{
-    transform: translate(.4rem,.3rem) rotate(45deg);
-}
-.show-menu #line2{
-    opacity: 0;
-    visibility: hidden;
-}
-.show-menu #line3{
-    transform: translate(.3rem,-.8rem) rotate(-45deg);
-}
-.hamburguer line{
-    position: absolute;
-    left: 3rem;
-    height: 2rem;
-    width: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1F1C18;;
-    color: #fff;
-    font-family: var(--font-secundary);
-    opacity: 0;
-} */
-
-header {
+/* Banner */
+main {
     width: 100%;
     height: 100% vh;
     overflow: hidden;
@@ -144,15 +96,14 @@ header {
     height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 1);
-    min-width: 100vh;
-    min-height: 100vh;
+    /* min-width: 100vh;
+    min-height: 100vh; */
 }
 
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* a imagem não fica esprimida */
+    object-fit: cover;/* a imagem não fica esprimida */
     opacity: 0.4;
     animation: zoom 5s forwards;
 }
@@ -223,45 +174,9 @@ header {
     }
 }
 
-
-/* Menu - Responsividade */
-
-
-/* .sidebar{
-    width: 100rem;
-    height: 20rem;
-    background-color:#000;
-    position: fixed;
-    top: -50rem;
-    z-index: 80;
-    transition: all 1.1s;
-}
-.show-menu .sidebar{
-    top: 0;
-}
-.menu{
-    position: absolute;
-    top: 65%;
-    left: 6%;
-    transform: translate(-50%, -50%);
-}
-.menu-item{
-    text-align: left;
-    margin-bottom: .9rem;
-}
-.menu-link{
-    font-family: var(--font-secundary);
-    font-weight: 500;
-    font-size: 1.7rem;
-    color: var(--branco);
-    transition: color 1s;
-}
-.menu-link:hover{
-    color: #c32538;
-} */
-
 .social-media {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin-bottom:3rem;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -295,10 +210,10 @@ header {
 }
 
 .sobre-mim {
-    /* width: 55rem;
-    height: 45rem; */
-    width: 70%;
-    height: 60%;
+    width: 53rem;
+    height: 45rem;
+    /* width: 70%;
+    height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,7 +261,7 @@ header {
     font-size: 3rem;
     color: var(--branco);
     border-bottom: solid 3px #c32538;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     margin-bottom: 1rem;
 }
 
@@ -542,6 +457,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 50%;
     cursor: pointer;
     color: rgba(0, 0, 0, .6)
 }
@@ -566,6 +482,7 @@ header {
     width: 25rem;
     font-family: var(--font-secundary);
     font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .contato-whats a {
@@ -575,7 +492,6 @@ header {
     width: 25rem;
     font-family: var(--font-secundary);
     font-size: 1.3rem;
-    margin-top: 1rem;
 }
 
 
